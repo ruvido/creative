@@ -115,7 +115,6 @@ h1 {
   line-height: 1.2em;
   }
   
-h3 { text-transform:uppercase; letter-spacing:0.12em; }
 h3, h4, h5, h6 { font-weight: bold; }
 
 p.intro { font-size: 1.309em; margin-bottom: 1em; }
@@ -168,6 +167,29 @@ html, body {
 p {
 	margin: 0;
 	padding: 0;
+}
+
+header {
+	padding: 4em;
+}
+
+h3 { 
+	text-transform:uppercase;
+	line-height: 1.2	;
+	border-right: 4px solid black;
+	border-left: 4px solid black;
+	padding: 0 1em;
+}
+
+section {
+	padding: 0 1em;
+}
+
+hr {
+	margin-top: 2em;
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: white;
 }
 
 /* 7. BROWSER AND NON-SEMANTIC STYLING
@@ -226,14 +248,13 @@ body {
 	
 }
 
-.hearts {
-	background-image: url(/img/texture/hearts.png);
-	background-repeat: repeat;
-}
-
 footer {
 	padding-top: 100px;
 	/*background: #BEBEBE;*/
+}
+
+#formsection {
+	margin: 4em auto;
 }
 
 .formemail {
@@ -268,17 +289,39 @@ footer {
    background: #740000;
 }
 
+.formtext {
+	font-variant:small-caps;	
+}
+
+.forminput {
+	margin-bottom: 0.5em;
+	padding: 0.3em;
+	display: inline;
+	width: 70%;
+	font-size: 0.9em;
+	-moz-border-radius: 5px;
+		 border-radius: 5px;
+}
+
+.wide { width: 100%;}
+
 
 
 /* 10. CUSTOM LAYOUT & TYPOGRAPHY (iPHONE)
 ----------------------------------------------------------------------------------------*/
 @media screen and (min-width: 0em) and (max-width: 29.999em) {
 
-#container { max-width: 100%;}
+#container { max-width: 100%;
+	padding: 0 0.5em;}
 
 #subscribe {font-size: 1em;}
 
 .box {text-align: center;}
 
+
+h1 {
+	margin-left:-.7em;
+	font-size:2em;
 }
 
+}

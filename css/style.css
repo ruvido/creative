@@ -122,17 +122,18 @@ p.intro { font-size: 1.309em; margin-bottom: 1em; }
 header { text-align:center; }
 
 footer {
-/* 
-  margin:1.618em 0 0;
-  padding: 1.618em 0 0;
- */
-/* 
-  border-top: 1px solid rgb(102,102,102);
-  border-bottom: 1px solid rgb(102,102,102);
- */
-  }
+	position: absolute;
+	bottom: 0.5em;
+	width: 50%;
+	left:25%;
+	/*color: #9C9C9C;*/
+	color: white;
+	font-size: 0.8em;
+	padding: 0.5em;
+	text-align:center;
+	background: black;
+}
   
-footer p { float: left; margin-right:1em; }
 
 
 

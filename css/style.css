@@ -105,6 +105,13 @@ a, a:visited { outline: none; color: #439BBD; text-decoration: underline; }
 a:hover { outline: none; text-decoration:none; }  
 a:active, a:focus { outline: none; }
 
+header a,
+header a:visited,
+header a:hover,
+header a:active {
+	text-decoration: none;
+	color:black;}
+
 
 /* 5. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
 ----------------------------------------------------------------------------------------*/
@@ -122,20 +129,19 @@ p.intro { font-size: 1.309em; margin-bottom: 1em; }
 header { text-align:center; }
 
 footer {
-	position: absolute;
-	bottom: 0.5em;
+	height: 100px;
 	width: 50%;
-	left:25%;
-	/*color: #9C9C9C;*/
 	color: white;
 	font-size: 0.8em;
 	padding: 0.5em;
 	text-align:center;
 	background: black;
 }
+
+.myfooter {
+	border-bottom: 2em solid black;
+}
   
-
-
 
 /* 6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
 ----------------------------------------------------------------------------------------*/
@@ -193,6 +199,9 @@ hr {
     background: white;
 }
 
+.upspace{
+	margin-top:2em;
+}
 /* 7. BROWSER AND NON-SEMANTIC STYLING
 ----------------------------------------------------------------------------------------*/
 .cf:before, .cf:after { content: ""; display: block; }
@@ -270,11 +279,10 @@ footer {
 .formsubmit {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 800;
-	
 	width: 18%;
 	min-width:100px;
 	display: inline;
-	background: red;
+	background: black;
 	color: white;
 	border: 0px;
 	font-size: 1em;

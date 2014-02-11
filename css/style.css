@@ -314,7 +314,10 @@ footer {
 
 .wide { width: 100%;}
 
-
+.third {
+	display: block;
+	width: 33%;
+}
 
 /* 10. CUSTOM LAYOUT & TYPOGRAPHY (iPHONE)
 ----------------------------------------------------------------------------------------*/

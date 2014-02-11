@@ -52,14 +52,14 @@
       </a>	  
   </header>
   
-  <section> <h3>Per poter sviluppare al meglio il vostro progetto, ho bisogno di conoscere in maniera più approfondita il vostro lavoro e gli obiettivi che desiderate raggiungere</h3>
+  <section> <h3>Per poter sviluppare al meglio il vostro progetto, descrivetemi il vostro lavoro e gli obiettivi che desiderate raggiungere in maggiore dettaglio</h3>
   </section>
 	  
 	      
   <section id="formsection">
 
 	
-	  <form action="http://getsimpleform.com/messages?form_api_token=30f23d90e5ec45f4b523003ac704b28c" method="post">
+	  <form name="domande" onsubmit="return validateForm()" action="http://getsimpleform.com/messages?form_api_token=30f23d90e5ec45f4b523003ac704b28c" method="post">
 	
 	  <input type='hidden' name='redirect_to' value='http://ruvido.github.io/creative/thank-you.html' />
 	
@@ -94,7 +94,10 @@
 	  <input class="wide forminput" type="text" name="una frase che descriva la vostra attività" />
 
 	  <div class="formtext">tre parole chiave per descrivere la vostra attività</div>
-	  <input class="wide forminput" type="text" name="tre parole chiave per descrivere la vostra attività" />
+	  <input class="wide forminput third" type="text" name="1. parole chiave" />
+	  <input class="wide forminput third" type="text" name="2. parole chiave" />
+	  <input class="wide forminput third" type="text" name="3. parole chiave" />
+
 
 	  <div class="formtext">cosa vi rende unici?</div>
 	  <input class="wide forminput" type="text" name="cosa vi rende unici?" />
@@ -105,7 +108,7 @@
 	  <div class="formtext">quanto tempo un cliente spende in media sul sito?</div>
 	  <input class="wide forminput" type="text" name="quanto tempo un cliente spende in media sul sito?" />
 
-	  <div class="formtext">quale è lo scopo principale del sito? quello secondario?</div>
+	  <div class="formtext">quale è lo scopo principale del sito? e quello secondario?</div>
 	  <input class="wide forminput" type="text" name="quale è lo scopo principale del sito? quello secondario?" />
 
 	  <div class="formtext">il vostro obiettivo è di avere visitatori che vengano una sola volta oppure che ritornino?</div>
@@ -118,10 +121,15 @@
 	  <input class="wide forminput" type="text" name="quali sono i vostri concorrenti principali?" />
 
 	  <div class="formtext">quali siti vi piacciono?</div>
-	  <input class="wide forminput" type="text" name="quali siti vi piacciono?" />
+	  <input class="wide forminput third" type="text" name="1. siti vi piacciono?" />
+	  <input class="wide forminput third" type="text" name="2. siti vi piacciono?" />
+	  <input class="wide forminput third" type="text" name="3. siti vi piacciono?" />
 
 	  <div class="formtext">quali siti non vi piacciono?</div>
-	  <input class="wide forminput" type="text" name="quali siti non vi piacciono?" />
+	  <input class="wide forminput third" type="text" name="1. siti non vi piacciono?" />
+	  <input class="wide forminput third" type="text" name="2. siti non vi piacciono?" />
+	  <input class="wide forminput third" type="text" name="3. siti non vi piacciono?" />
+
 
 	  <div class="formtext">ci sono alcune funzionalità particolari che vorreste vedere incluse?</div>
 	  <input class="wide forminput" type="text" name="ci sono alcune funzionalità particolari che vorreste vedere incluse?" />
@@ -135,14 +143,14 @@
 	  <div class="formtext">in futuro il sito verra' aggiornato da voi stessi?</div>
 	  <input class="wide forminput" type="text" name="in futuro il sito verra' aggiornato da voi stessi?" />
 
-	  <div class="formtext">in maniera indicativa, quando vorreste che il progetto fosse finito?</div>
-	  <input class="wide forminput" type="text" name="in maniera indicativa, quando vorreste che il progetto fosse finito?" />
-
 	  <div class="formtext">vorreste che il sito fosse in grado di registrare i dati degli utenti? (es. nome ed email)</div>
 	  <input class="wide forminput" type="text" name="vorreste che il sito fosse in grado di registrare i dati degli utenti? (es. nome ed email)" />
 
 	  <div class="formtext">avete bisogno di un modo per essere contattati direttamente dal sito? (es. contact form)</div>
 	  <input class="wide forminput" type="text" name="avete bisogno di un modo per essere contattati direttamente dal sito? (es. contact form)" />
+
+	  <div class="formtext">in maniera indicativa, quando vorreste che il progetto fosse finito?</div>
+	  <input class="wide forminput" type="text" name="in maniera indicativa, quando vorreste che il progetto fosse finito?" />
 
 	  <div class="formtext">c'è nient'altro che avete bisogno di dirmi?</div>
 	  <input class="wide forminput" type="text" name="c'è nient'altro che avete bisogno di dirmi?" />
@@ -167,9 +175,38 @@
 
 
 
+  <!-- Validate Form -->
+  <script>
+  function validateForm()
+  {
+
+	  var x=document.forms["domande"]["nome del contatto principale per questo progetto"].value;
+	  if (x==null || x=="")
+	    {
+	    alert("Hai dimenticato di inserire il nome del contatto principale per questo progetto");
+	    return false;
+	    }
+
+	    var x=document.forms["domande"]["numero di telefono"].value;
+	    if (x==null || x=="")
+	      {
+	      alert("Hai dimenticato di inserire il numero di telefono");
+	      return false;
+	      }
+
+		  var x=document.forms["domande"]["indirizzo email"].value;
+		  if (x==null || x=="")
+		    {
+		    alert("Hai dimenticato di inserire l'indirizzo email");
+		    return false;
+		    }
 
 
-  
+
+
+  }
+  </script>
+
   
 
 
